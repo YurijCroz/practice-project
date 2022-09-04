@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
 import { getUserAction, clearUserStore, headerRequest } from '../../actions/actionCreator';
+import Logo from '../Logo';
 
 class Header extends React.Component {
   componentDidMount() {
@@ -54,7 +55,11 @@ class Header extends React.Component {
                 <li>
                   <Link to="http:/www.google.com" style={{ textDecoration: 'none' }}><span>Affiliate Dashboard</span></Link>
                 </li>
-                <li><span onClick={this.logOut}>Logout</span></li>
+                <li>
+                  <Link to='/'>
+                    <span onClick={this.logOut}>Logout</span>
+                  </Link>
+                </li>
               </ul>
             </div>
             <img src={`${CONSTANTS.STATIC_IMAGES_PATH}email.png`} className={styles.emailIcon} alt="email" />
@@ -88,14 +93,14 @@ class Header extends React.Component {
           <div className={styles.loginSignnUpHeaders}>
             <div className={styles.numberContainer}>
               <img src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`} alt="phone" />
-              <span>(877)&nbsp;355-3585</span>
+              <span><a href={`tel:${CONSTANTS.CONTACTS.TEL}`}>{CONSTANTS.CONTACTS.TEL}</a></span>
             </div>
             <div className={styles.userButtonsContainer}>
               {this.renderLoginButtons()}
             </div>
           </div>
           <div className={styles.navContainer}>
-            <img src={`${CONSTANTS.STATIC_IMAGES_PATH}blue-logo.png`} className={styles.logo} alt="blue_logo" />
+            <Logo/>
             <div className={styles.leftNav}>
               <div className={styles.nav}>
                 <ul>
