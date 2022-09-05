@@ -140,7 +140,7 @@ class Header extends React.Component {
                         <a href="http://www.google.com">
                             BECOME A
                             CREATIVE
-</a>
+                        </a>
                       </li>
                     </ul>
                   </li>
@@ -172,7 +172,7 @@ class Header extends React.Component {
                         <a href="http://www.google.com">
                             SELL YOUR
                             DOMAINS
-</a>
+                        </a>
                       </li>
                     </ul>
                   </li>

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Names For Sale",
+        "text": "Hand-picked collection of premium names with a matching URL",
+        "img": "more-benifits-high-quality-icon.png",
+        "imgAlt": "global",
+        "btnText": "Explore Names For Sale",
+        "btnSrc": "/dashboard"
+    },
+    {
+        "title": "Naming Contests",
+        "text": "Custom name suggestion from 100s of naming experts as you are guided through our agency-style process",
+        "img": "more-benifits-world-icon.png",
+        "imgAlt": "desktop",
+        "btnText": "Launch a Contest",
+        "btnSrc": "/dashboard"
+    }
+]
